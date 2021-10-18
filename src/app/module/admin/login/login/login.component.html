@@ -1,0 +1,39 @@
+
+  <div class="container-fluid" *ngIf='page'>
+    <div class="container">
+      <div class="container-login">
+        <div class="login_container">
+          <form class="login_form" [formGroup]='loginForm' (ngSubmit)='validacao()'>
+            <div class="form-floating mb-3 login_form">
+              <input class="login_input form-control" type="text" id="floatingInput" formControlName='nome' placeholder="*Usuario" [ngClass]="{'is-invalid': loginForm.get('nome')?.errors && (loginForm.get('nome')?.dirty || loginForm.get('nome')?.touched)}">
+              <label for="floatingInput">*Usuario</label>
+              <span class="login_input-border"></span>
+              <span class="text-danger" *ngIf="loginForm.get('nome')?.errors && (loginForm.get('nome')?.dirty || loginForm.get('nome')?.touched)">
+                <p>Preencha o campo nome</p>
+              </span>
+            </div>
+            <div class="form-floating login_form">
+              <input class="login_input form-control" type="password" id="floatingPassword" formControlName='senha' placeholder="*Senha" [ngClass]="{'is-invalid': loginForm.get('senha')?.errors && (loginForm.get('senha')?.dirty || loginForm.get('senha')?.touched)}">
+              <label for="floatingPassword">*Senha</label>
+              <span class="login_input-border"></span>
+              <span class="text-danger" *ngIf="loginForm.get('senha')?.errors && (loginForm.get('senha')?.dirty || loginForm.get('senha')?.touched)">
+                <p>Preencha o campo senha</p>
+              </span>
+            </div>
+            <div class="container-button">
+              <button class="login_submit" type="submit"[disabled]='!loginForm.valid'>Entrar</button>
+            </div>
+            <div class="link">
+              <a class="login_reset text-center d-block" routerLink="/cadastro">#Criar Conta</a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="container-fluid fade-In" *ngIf='mostraSpin'>
+        <div class="spinner-border text-warning" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- loading -->

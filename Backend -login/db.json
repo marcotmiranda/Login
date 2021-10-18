@@ -1,0 +1,19 @@
+{
+  "cadastro": [
+    {
+      "id": 1,
+      "nome": "Marco Tulio Pires",
+      "senha": 54321
+    },
+    {
+      "id": 2,
+      "nome": "Pablo",
+      "senha": 12345
+    },
+    {
+      "nome": "augusto",
+      "senha": "123",
+      "id": 3
+    }
+  ]
+}

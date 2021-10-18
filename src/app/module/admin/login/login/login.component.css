@@ -1,0 +1,52 @@
+.container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.login_container{
+  border: 2px solid rgba(0, 0, 0, 1.5);
+  background-image: url('../../../../../assets/wallpaper-background.png');
+  border-radius: 22px;
+  text-align: center;
+  padding: 12rem 18rem;
+  margin-top: 2.5rem;
+  height: 580px;
+  width: 1000px;
+}
+input{
+  opacity: 0.8;
+}
+a{
+  color: rgb(3, 3, 112);
+}
+.link{
+  margin-top: 6rem;
+}
+.login_submit{
+  border-radius: 5px;
+  background: rgba(221, 188, 2, 0.919);
+  border-color: rgba(3, 3, 112, 0.857);
+  color: rgba(3, 3, 112, 0.857);
+}
+.login_submit:hover{
+  color: rgba(221, 188, 2, 0.919);
+  border-color: rgba(221, 188, 2, 0.919);
+  background: rgba(3, 3, 112, 0.857);
+}
+.container-button{
+  margin-top: 2rem;
+}
+/* spinner */
+.fade-In{
+  position: absolute;
+  background: rgba(0,0,0,0.8);
+  height: 100vh;
+  opacity: 2.5;
+}
+.spinner-border{
+  height: 200px;
+  width: 200px;
+  margin-left: 34rem;
+  margin-top: 10rem;
+}
+
